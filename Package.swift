@@ -19,10 +19,6 @@ let package = Package(
                 .product(name: "Capacitor", package: "capacitor-swift-pm"),
                 .product(name: "Cordova", package: "capacitor-swift-pm")
             ],
-            path: "ios/Sources/PhotoAnnotatorPlugin"),
-        .testTarget(
-            name: "PhotoAnnotatorPluginTests",
-            dependencies: ["PhotoAnnotatorPlugin"],
-            path: "ios/Tests/PhotoAnnotatorPluginTests")
+            path: "ios/Sources/PhotoAnnotatorPlugin")
     ]
 )

@@ -11,20 +11,11 @@ public class PhotoAnnotatorPlugin: CAPPlugin, CAPBridgedPlugin, QLPreviewControl
     public let identifier = "PhotoAnnotatorPlugin"
     public let jsName = "PhotoAnnotator"
     public let pluginMethods: [CAPPluginMethod] = [
-        CAPPluginMethod(name: "echo", returnType: CAPPluginReturnPromise),
         CAPPluginMethod(name: "annotatePhoto", returnType: CAPPluginReturnPromise)
     ]
-    private let implementation = PhotoAnnotator()
     private var annotationCall: CAPPluginCall?
     private var annotationURL: URL?
     private var annotationDidUpdate = false
-
-    @objc func echo(_ call: CAPPluginCall) {
-        let value = call.getString("value") ?? ""
-        call.resolve([
-            "value": implementation.echo(value)
-        ])
-    }
 
     @objc func annotatePhoto(_ call: CAPPluginCall) {
         guard annotationCall == nil else {
