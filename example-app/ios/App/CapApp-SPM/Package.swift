@@ -13,7 +13,7 @@ let package = Package(
     dependencies: [
         .package(url: "https://github.com/ionic-team/capacitor-swift-pm.git", exact: "8.4.1"),
         .package(name: "CapacitorCamera", path: "../../../node_modules/@capacitor/camera"),
-        .package(name: "PhotoAnnotator", path: "../../../..")
+        .package(name: "Tony4outsystemsPhotoAnnotator", path: "../../../..")
     ],
     targets: [
         .target(
@@ -22,7 +22,7 @@ let package = Package(
                 .product(name: "Capacitor", package: "capacitor-swift-pm"),
                 .product(name: "Cordova", package: "capacitor-swift-pm"),
                 .product(name: "CapacitorCamera", package: "CapacitorCamera"),
-                .product(name: "PhotoAnnotator", package: "PhotoAnnotator")
+                .product(name: "Tony4outsystemsPhotoAnnotator", package: "Tony4outsystemsPhotoAnnotator")
             ]
         )
     ]

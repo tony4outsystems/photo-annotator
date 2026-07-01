@@ -1,19 +1,19 @@
 # photo-annotator
 
-TODO
+Capacitor plugin for annotating photos on iOS.
 
 ## Install
 
 To use npm
 
 ```bash
-npm install photo-annotator
+npm install @tony4outsystems/photo-annotator
 ````
 
 To use yarn
 
 ```bash
-yarn add photo-annotator
+yarn add @tony4outsystems/photo-annotator
 ```
 
 Sync native files

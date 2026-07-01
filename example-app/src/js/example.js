@@ -1,4 +1,4 @@
-import { PhotoAnnotator } from 'photo-annotator';
+import { PhotoAnnotator } from '@tony4outsystems/photo-annotator';
 import { Camera, CameraResultType, CameraSource } from '@capacitor/camera';
 
 const annotateButton = document.getElementById('annotateButton');

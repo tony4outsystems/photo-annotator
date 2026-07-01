@@ -2,11 +2,11 @@
 import PackageDescription
 
 let package = Package(
-    name: "PhotoAnnotator",
+    name: "Tony4outsystemsPhotoAnnotator",
     platforms: [.iOS(.v15)],
     products: [
         .library(
-            name: "PhotoAnnotator",
+            name: "Tony4outsystemsPhotoAnnotator",
             targets: ["PhotoAnnotatorPlugin"])
     ],
     dependencies: [

@@ -1,11 +1,9 @@
 {
-  "name": "photo-annotator",
-  "version": "0.0.1",
-  "description": "TODO",
-  "main": "dist/plugin.cjs.js",
-  "module": "dist/esm/index.js",
-  "types": "dist/esm/index.d.ts",
-  "unpkg": "dist/plugin.js",
+  "name": "@tony4outsystems/photo-annotator",
+  "version": "1.0.0",
+  "description": "Capacitor plugin for annotating photos on iOS.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "files": [
     "android/src/main/",
     "android/build.gradle",
@@ -19,11 +17,12 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com//photo-annotator.git"
+    "url": "git+https://github.com/tony4outsystems/photo-annotator.git"
   },
   "bugs": {
-    "url": "https://github.com//photo-annotator/issues"
+    "url": "https://github.com/tony4outsystems/photo-annotator/issues"
   },
+  "homepage": "https://github.com/tony4outsystems/photo-annotator#readme",
   "keywords": [
     "capacitor",
     "plugin",
@@ -31,7 +30,7 @@
   ],
   "scripts": {
     "verify": "npm run verify:ios && npm run verify:android && npm run verify:web",
-    "verify:ios": "xcodebuild -scheme PhotoAnnotator -destination generic/platform=iOS",
+    "verify:ios": "xcodebuild build -scheme Tony4outsystemsPhotoAnnotator -destination generic/platform=iOS",
     "verify:android": "cd android && ./gradlew clean build test && cd ..",
     "verify:web": "npm run build",
     "lint": "npm run eslint && npm run prettier -- --check && npm run swiftlint -- lint",
@@ -40,7 +39,7 @@
     "prettier": "prettier \"**/*.{css,html,ts,js,java}\" --plugin=prettier-plugin-java",
     "swiftlint": "node-swiftlint",
     "docgen": "docgen --api PhotoAnnotatorPlugin --output-readme README.md --output-json dist/docs.json",
-    "build": "npm run clean && npm run docgen && tsc && rollup -c rollup.config.mjs",
+    "build": "npm run clean && npm run docgen && tsc",
     "clean": "rimraf ./dist",
     "watch": "tsc --watch",
     "prepublishOnly": "npm run build"
@@ -57,7 +56,6 @@
     "prettier": "^3.6.2",
     "prettier-plugin-java": "^2.7.7",
     "rimraf": "^6.1.0",
-    "rollup": "^4.53.2",
     "swiftlint": "^2.0.0",
     "typescript": "^5.9.3"
   },
