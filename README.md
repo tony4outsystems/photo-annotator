@@ -27,6 +27,7 @@ npx cap sync
 <docgen-index>
 
 * [`echo(...)`](#echo)
+* [`annotatePhoto(...)`](#annotatephoto)
 
 </docgen-index>
 
@@ -44,6 +45,21 @@ echo(options: { value: string; }) => Promise<{ value: string; }>
 | **`options`** | <code>{ value: string; }</code> |
 
 **Returns:** <code>Promise&lt;{ value: string; }&gt;</code>
+
+--------------------
+
+
+### annotatePhoto(...)
+
+```typescript
+annotatePhoto(options: { uri: string; }) => Promise<{ uri: string; modified: boolean; }>
+```
+
+| Param         | Type                          |
+| ------------- | ----------------------------- |
+| **`options`** | <code>{ uri: string; }</code> |
+
+**Returns:** <code>Promise&lt;{ uri: string; modified: boolean; }&gt;</code>
 
 --------------------
 

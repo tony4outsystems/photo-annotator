@@ -7,4 +7,8 @@ export class PhotoAnnotatorWeb extends WebPlugin implements PhotoAnnotatorPlugin
     console.log('ECHO', options);
     return options;
   }
+
+  async annotatePhoto(): Promise<{ uri: string; modified: boolean }> {
+    throw this.unavailable('Photo annotation is only available on iOS.');
+  }
 }
