@@ -1,6 +1,6 @@
 {
   "name": "@tony4outsystems/photo-annotator",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Capacitor plugin for annotating photos on iOS.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -11,7 +11,7 @@
     "ios/Sources",
     "ios/Tests",
     "Package.swift",
-    "PhotoAnnotator.podspec"
+    "Tony4outsystemsPhotoAnnotator.podspec"
   ],
   "author": "Tony Lefebvre",
   "license": "MIT",
