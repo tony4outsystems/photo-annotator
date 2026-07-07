@@ -1,6 +1,7 @@
 # node files
 # dist temp
 node_modules
+dist/
 
 # iOS files
 Pods
